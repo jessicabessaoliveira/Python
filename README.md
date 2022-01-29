@@ -1,2 +1,2 @@
 # Python
- Exercícios com resolução em Python
+ Exercícios com resolução em Python.
