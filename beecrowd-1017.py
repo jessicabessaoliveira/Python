@@ -27,4 +27,3 @@ print('{:.3f}'.format(litros))
 Usando f-string PYTHON 3.6
 print(f'{litros:.3f}')
 '''
-
