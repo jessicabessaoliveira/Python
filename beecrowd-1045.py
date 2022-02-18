@@ -17,57 +17,34 @@ Imprima todas as classificações do triângulo especificado na entrada.
 
 numeros = input()
 lado = numeros.split()
-num1 = float(lado[0])
-num2 = float(lado[1])
-num3 = float(lado[2])
-A = num1
-B = 0
-C = 0
-if num2 > num1 and num2 > num3:
-    A = num2 #lado maior
-    B = num1
-    C = num3
-    if A >= (B + C):
-        print(f'NAO FORMA TRIANGULO')
-    elif A**2 == B**2 + C**2:
-        print(f'TRIANGULO RETANGULO')
-        if A == B == C:
-            print(f'TRIANGULO EQUILATERO')
-        elif A == B or A == C or B == C:
-            print(f'TRIANGULO ISOSCELES')
-    elif A**2 > B**2 + C**2:
-        print(f'TRIANGULO OBTUSANGULO')
-        if A == B == C:
-            print(f'TRIANGULO EQUILATERO')
-        elif A == B or A == C or B == C:
-            print(f'TRIANGULO ISOSCELES')
-    elif A**2 < B**2 + C**2:
-        print(f'TRIANGULO ACUTANGULO')
-        if A == B == C:
-            print(f'TRIANGULO EQUILATERO')
-        elif A == B or A == C or B == C:
-            print(f'TRIANGULO ISOSCELES')
-if num3 >= num1 and num3 >= num2:
-    A = num3 #lado maior
-    B = num1
-    C = num2
-    if A >= (B + C):
-        print(f'NAO FORMA TRIANGULO')
-    elif A**2 == B**2 + C**2:
-        print(f'TRIANGULO RETANGULO')
-        if A == B == C:
-         print(f'TRIANGULO EQUILATERO')
-        elif A == B or A == C or B == C:
-            print(f'TRIANGULO ISOSCELES')
-    elif A**2 > B**2 + C**2:
-        print(f'TRIANGULO OBTUSANGULO')
-        if A == B == C:
-         print(f'TRIANGULO EQUILATERO')
-        elif A == B or A == C or B == C:
-            print(f'TRIANGULO ISOSCELES')
-    elif A**2 < B**2 + C**2:
-        print(f'TRIANGULO ACUTANGULO')
-        if A == B == C:
-            print(f'TRIANGULO EQUILATERO')
-        elif A == B or A == C or B == C:
-            print(f'TRIANGULO ISOSCELES')
+A = float(lado[0])
+B = float(lado[1])
+C = float(lado[2])
+
+# Ordenando decrescente A>B>C
+if A < B:
+    temp = A
+    A = B
+    B = temp
+if A < C:
+    temp = A
+    A = C
+    C = temp
+if B < C:
+    temp = B
+    B = C
+    C = temp
+
+if A >= (B + C):
+    print(f'NAO FORMA TRIANGULO')
+elif A**2 == B**2 + C**2:
+    print(f'TRIANGULO RETANGULO')
+elif A**2 > B**2 + C**2:
+    print(f'TRIANGULO OBTUSANGULO')
+elif A**2 < B**2 + C**2:
+    print(f'TRIANGULO ACUTANGULO')
+
+if A == B == C:
+    print(f'TRIANGULO EQUILATERO')
+elif A == B != C or A == C != B or B == C != A:
+    print(f'TRIANGULO ISOSCELES')
