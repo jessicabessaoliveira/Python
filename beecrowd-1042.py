@@ -16,46 +16,28 @@ num1 = int(valor[0])
 num2 = int(valor[1])
 num3 = int(valor[2])
 
-if num2 < num1 and num2 < num3:
-    menor = num2
-    if num1 < num3:
-        maior = num3
-        print(f'{num2}')
-        print(f'{num1}')
-        print(f'{num3}')
-    elif num3 < num1:
-        menor = num1
-        print(f'{num2}')
-        print(f'{num3}')
-        print(f'{num1}')
-if num3 < num1 and num3 < num2:
-    menor = num3
-    if num1 < num2:
-        maior = num2
-        print(f'{num3}')
-        print(f'{num1}')
-        print(f'{num2}')
-    elif num2 < num1:
-        maior = num1
-        print(f'{num3}')
-        print(f'{num2}')
-        print(f'{num1}')
+n1 = num1
+n2 = num2
+n3 =num3
 
-if num2 > num1 and num2 > num3:
-    maior = num2
-    if num3 > num1:
-        menor = num1
-        print(f'{num1}')
-        print(f'{num3}')
-        print(f'{num2}')
-elif num3 > num1 and num3 > num2:
-    maior = num3
-    if num2 > num1:
-        menor = num1
-        print(f'{num1}')
-        print(f'{num2}')
-        print(f'{num3}')
-print()
+# Ordenando num1<num2<num3
+if num3 < num2:
+    temp = num3
+    num3 = num2
+    num2 = temp
+if num3 < num1:
+    temp = num3
+    num3 = num1
+    num1 = temp
+if num2 < num1:
+    temp = num2
+    num2 = num1
+    num1 = temp
+
 print(f'{num1}')
 print(f'{num2}')
 print(f'{num3}')
+print()
+print(f'{n1}')
+print(f'{n2}')
+print(f'{n3}')
