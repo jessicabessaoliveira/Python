@@ -21,7 +21,7 @@ A = float(lado[0])
 B = float(lado[1])
 C = float(lado[2])
 
-# Ordenando decrescente A>B>C
+# Ordenando A>B>C
 if A < B:
     temp = A
     A = B
