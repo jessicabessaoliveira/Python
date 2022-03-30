@@ -17,11 +17,12 @@ hInicial = int(tempo[0])
 minInicial = int(tempo[1])
 hFinal = int(tempo[2])
 minFinal = int(tempo[3])
-
+'''
 hi = hInicial * 60
 inicioJogo = hi + minInicial
 hf = hFinal * 60
 fimJogo = hf + minFinal
+
 partida = fimJogo - inicioJogo
 
 
@@ -36,3 +37,18 @@ if hf - hi == 0:
 
 if partida <= 1440 and partida > 0:
         print(f'O JOGO DUROU {horas} HORA(S) E {minutos} MINUTO(S)')
+'''
+horaTotal = hFinal - hInicial
+minTotal = minFinal - minInicial
+
+if horaTotal < 0:
+    horaTotal += 24
+
+if minTotal < 0:
+    minTotal += 60
+    horaTotal -= 1
+
+if minTotal == 0 and horaTotal == 0:
+    print(f'O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)')
+else:
+    print(f'O JOGO DUROU {horaTotal} HORA(S) E {minTotal} MINUTO(S)')
