@@ -1,11 +1,7 @@
 '''
 1ª questão
-Faça um programa que leia da entrada padrão linhas até que uma vazia seja digitada. Para
-cada linha lida, exceto a vazia, suponha que seja um número inteiro maior que zero.
-Suponha que este número inteiro é o valor a ser trocado em um número mínimo de cédulas
-e/ou moeda. As cédulas possuem valor: 100, 50, 20, 10, 5, 2 reais e a moeda seja de 1
-real. Veja o teste a seguir e obedeça rigidamente as escritas na saída padrão,
-considerando singular ou plural de notas em cada caso, bem como a devida tabulação.
+Faça um programa que leia da entrada padrão linhas até que uma vazia seja digitada. Para cada linha lida, exceto a vazia, suponha que seja um número inteiro maior que zero. Suponha que este número inteiro é o valor a ser trocado em um número mínimo de cédulas
+e/ou moeda. As cédulas possuem valor: 100, 50, 20, 10, 5, 2 reais e a moeda seja de 1 real. Veja o teste a seguir e obedeça rigidamente as escritas na saída padrão, considerando singular ou plural de notas em cada caso, bem como a devida tabulação.
 
 Entradas: 
 100
