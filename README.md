@@ -1,5 +1,5 @@
-# Python
- Exercícios com resolução em Python :snake:
+# Python :snake:
+ Exercícios com resolução em Python.
 
 ~~~
 print("Olá, Mundo!")
